@@ -12,7 +12,7 @@ app.use(cors({ credentials: true, origin }));
 app.use(express.json());
 app.use("/api/products", productRoutes);
 
-app.get("/api", (req, res) => {
+app.get("/", (req, res) => {
   res.send("<h1>server running...</h1>");
   //   console.log(req);
 });
