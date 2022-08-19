@@ -12,10 +12,10 @@ app.use(cors({ credentials: true, origin }));
 app.use(express.json());
 app.use("/api/products", productRoutes);
 
-// app.get("/", (req, res) => {
-//   res.send("<h1>HELOO WORLD</h1>");
-//  //   console.log(req);
-// });
+app.get("/api", (req, res) => {
+  res.send("<h1>server running...</h1>");
+  //   console.log(req);
+});
 
 const startServer = async () => {
   try {
